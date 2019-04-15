@@ -1,0 +1,6 @@
+0:0:0:0:0:0:0:1 - - [15/Apr/2019:09:32:40 +0800] "GET / HTTP/1.1" 200 1855 http-bio-8080-exec-1 1330
+0:0:0:0:0:0:0:1 - - [15/Apr/2019:09:32:43 +0800] "GET /manager/product_list?_=1555291961001 HTTP/1.1" 200 501 http-bio-8080-exec-3 260
+0:0:0:0:0:0:0:1 - - [15/Apr/2019:09:32:43 +0800] "GET /css/themes/default/images/loading.gif HTTP/1.1" 200 1737 http-bio-8080-exec-4 321
+0:0:0:0:0:0:0:1 - - [15/Apr/2019:09:32:50 +0800] "GET /manager/product_cat_list?_=1555291961002 HTTP/1.1" 200 263 http-bio-8080-exec-7 74
+0:0:0:0:0:0:0:1 - - [15/Apr/2019:09:32:50 +0800] "POST /product_category/list HTTP/1.1" 200 263 http-bio-8080-exec-8 2
+0:0:0:0:0:0:0:1 - - [15/Apr/2019:09:32:50 +0800] "POST /product_category/list HTTP/1.1" 200 263 http-bio-8080-exec-9 2
