@@ -1,8 +1,15 @@
 # ssm-shopping
-1、项目使用了ssm框架
-spring：
-springMVC：RESTful
-Mybatis：
-2、mysql数据库
-3、easyUI
-。。。待续
+该项目为一个商城系统<br>
+manager模块为后台管理模块<br>
+.......（目前就做到这儿）
+
+-----------------------分割线---------------------------
+
+使用了maven的继承、聚合，还将使用easyUI的一些高级特性
+1、项目使用了ssm框架<br>
+springMVC：RESTful<br>
+Mybatis：逆向工程<br>
+2、mysql数据库<br>
+3、easyUI<br>
+。。。（目前就使用了这些）<br>
+哈哈哈。。。
