@@ -30,7 +30,7 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
             easyuiTree.setId(productCategory.getId());
             easyuiTree.setText(productCategory.getName());
             easyuiTree.setState(productCategory.getParentId()==0?"closed":"open");
-//            easyuiTree.setAttributes(productCategory.getParentId()+"");
+            easyuiTree.setAttributes(productCategory.getParentId()+"");
 
             easyUITrees.add(easyuiTree);
         }
