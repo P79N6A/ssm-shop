@@ -12,5 +12,5 @@ Mybatis：逆向工程<br>
 2、mysql数据库<br>
 3、easyUI<br>
 。。。（目前就使用了这些）<br>
-git后记得设置mysql连接的密码和创建数据库<br>
+git后记得设置mysql连接的密码(我的为123)和创建数据库<br>
 哈哈哈。。。
