@@ -1,4 +1,4 @@
-# ssm-shopping
+# ssm-shop
 该项目为一个商城系统<br>
 manager模块为后台管理模块<br>
 .......（目前就做到这儿）
