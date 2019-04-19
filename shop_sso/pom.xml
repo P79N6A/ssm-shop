@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>shopping_parent</artifactId>
+        <artifactId>shop_parent</artifactId>
         <groupId>com.lly</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../shopping_parent/pom.xml</relativePath>
+        <relativePath>../shop_parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>shopping_sso</artifactId>
+    <artifactId>shop_sso</artifactId>
 
 
 </project>

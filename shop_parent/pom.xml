@@ -5,17 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.lly</groupId>
-    <artifactId>shopping_parent</artifactId>
+    <artifactId>shop_parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>../shopping_manager</module>
-        <module>../shopping_sso</module>
-        <module>../shopping_rest</module>
-        <module>../shopping_search</module>
-        <module>../shopping_common</module>
-        <module>../shopping_redis</module>
+        <module>../shop_manager</module>
+        <module>../shop_sso</module>
+        <module>../shop_rest</module>
+        <module>../shop_search</module>
+        <module>../shop_common</module>
+        <module>../shop_redis</module>
     </modules>
 
     <properties>
