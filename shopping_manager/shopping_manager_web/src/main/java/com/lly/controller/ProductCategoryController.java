@@ -9,7 +9,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
-
+/**
+ * Author:  lly
+ * Date:    2019/4/16 17:15
+ * Description:
+ */
 @Controller
 @RequestMapping("/product_category")
 public class ProductCategoryController {
