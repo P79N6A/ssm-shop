@@ -8,7 +8,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-
+/**
+ * Author:  lly
+ * Date:    2019/4/15 16:20
+ * Description:
+ */
 @Controller
 public class UserController {
 
