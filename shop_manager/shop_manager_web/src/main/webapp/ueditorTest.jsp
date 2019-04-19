@@ -23,12 +23,11 @@
     </style>
 </head>
 <body>
-<div>
+     <div>
     <h1>完整demo</h1>
-    <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
+    <script id="editor" type="text/plain" style="width:1024px;height:500px;margin:100px auto;"></script>
     </div>
-    <div id="btns">
-        <div>
+    <div id="btns"> <div>
         <button onclick="getAllHtml()">获得整个html的内容</button>
         <button onclick="getContent()">获得内容</button>
         <button onclick="setContent()">写入内容</button>
