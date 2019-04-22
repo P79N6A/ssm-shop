@@ -23,6 +23,7 @@
             <span>商品类别管理</span>
             <ul>
                 <li data-options="attributes:{'url':'manager/product_cat_list'}"><span>商品类别列表</span></li>
+                <li onclick="closeAll()"><span>关闭所有</span></li>
             </ul>
         </li>
     </ul>
@@ -36,11 +37,22 @@
 </div>
 </body>
 <script>
+    function closeAll(){
+        var tabs=$('#tabs');
+
+    }
     $('#tree').tree({
         onClick: function(node){
             var tabs = $('#tabs');
             var tab=tabs.tabs('getTab',node.text);
             if(tab){
+                tabs.tabs('update', {
+                    tab: tab,
+                    options: {
+                        title: node.text,
+                        href: node.attributes.url
+                    }
+                });
                 tabs.tabs('select',node.text);
             }else{
             tabs.tabs('add',{
