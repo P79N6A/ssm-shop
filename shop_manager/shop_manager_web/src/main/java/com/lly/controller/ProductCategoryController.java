@@ -1,6 +1,7 @@
 package com.lly.controller;
 
 import com.lly.common.EasyUITree;
+import com.lly.common.ResponseJsonResult;
 import com.lly.service.ProductCategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,5 +27,16 @@ public class ProductCategoryController {
         List<EasyUITree> easyUITrees = productCategoryService.findProductCategoryListByParentId(parentId);
         return easyUITrees;
     }
-
+    @RequestMapping("/add")
+    @ResponseBody
+    public ResponseJsonResult addCategory(short parentId,String name){
+        ResponseJsonResult responseJsonResult = productCategoryService.addCategory(parentId,name);
+        return responseJsonResult;
+    }
+    @RequestMapping("/del")
+    @ResponseBody
+    public ResponseJsonResult deleteCategory(short parentId,short id){
+        ResponseJsonResult responseJsonResult = productCategoryService.deleteCategory(parentId,id);
+        return responseJsonResult;
+    }
 }

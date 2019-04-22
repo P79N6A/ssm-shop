@@ -1,6 +1,7 @@
 package com.lly.service.impl;
 
 import com.lly.common.EasyUITree;
+import com.lly.common.ResponseJsonResult;
 import com.lly.mapper.ProductCategoryMapper;
 import com.lly.pojo.ProductCategory;
 import com.lly.pojo.ProductCategoryExample;
@@ -36,5 +37,35 @@ public class ProductCategoryServiceImpl implements ProductCategoryService {
         }
 
         return easyUITrees;
+    }
+
+    @Override
+    public ResponseJsonResult addCategory(short parentId, String name) {
+        ProductCategory productCategory=new ProductCategory();
+        productCategory.setParentId(parentId);
+        productCategory.setName(name);
+        productCategoryMapper.insert(productCategory);
+        ResponseJsonResult responseJsonResult=new ResponseJsonResult();
+        responseJsonResult.setMsg(productCategory.getId()+"");
+        return responseJsonResult;
+    }
+
+    @Override
+    public ResponseJsonResult deleteCategory(short parentId, short id) {
+        ProductCategoryExample productCategoryExample=new ProductCategoryExample();
+        ProductCategoryExample.Criteria criteria= productCategoryExample.createCriteria();
+        if(parentId==0) {
+            criteria.andIdEqualTo(id);
+            ProductCategoryExample.Criteria criteria1=productCategoryExample.createCriteria();
+            criteria1.andParentIdEqualTo(id);
+            productCategoryExample.or(criteria1);
+        }else{
+           criteria.andIdEqualTo(id);
+        }
+        productCategoryMapper.deleteByExample(productCategoryExample);
+        ResponseJsonResult responseJsonResult=new ResponseJsonResult();
+        responseJsonResult.setStatus(200);
+        responseJsonResult.setMsg("success");
+        return responseJsonResult;
     }
 }
