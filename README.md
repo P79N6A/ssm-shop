@@ -1,5 +1,7 @@
 # ssm-shop
 该项目为一个商城系统<br>
+两个分支：**master分支**、**coding分支**<br>
+很显然coding是编程时用的，master为保存稳定班的<br>
 manager模块为后台管理模块<br>
 .......（目前就做到这儿）
 
