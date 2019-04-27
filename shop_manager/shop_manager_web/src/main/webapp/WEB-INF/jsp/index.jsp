@@ -23,10 +23,10 @@
             <span>商品类别管理</span>
             <ul>
                 <li data-options="attributes:{'url':'manager/product_cat_list'}"><span>商品类别列表</span></li>
-                <li onclick="closeAll()"><span>关闭所有</span></li>
             </ul>
         </li>
     </ul>
+    <button onclick="closeAll()">关闭所有</button>
 </div>
 <div data-options="region:'center',title:''" style="padding:3px;background:#eee;">
     <div id="tabs" class="easyui-tabs">
@@ -38,8 +38,18 @@
 </body>
 <script>
     function closeAll(){
-        var tabs=$('#tabs');
-
+        var tabs=$('#tabs').tabs('tabs');
+        var len=tabs.length;
+        if(len>0){
+            var titles = new Array();
+            for(var i=0;i<len;i++){
+               titles.push(tabs[i].panel('options').title);
+            }
+            for(var j=0;j<len;j++){
+                $('#tabs').tabs('close',titles[j]);
+            }
+        }
+        return;
     }
     $('#tree').tree({
         onClick: function(node){
