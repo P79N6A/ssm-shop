@@ -44,6 +44,9 @@
             var titles = new Array();
             for(var i=0;i<len;i++){
                titles.push(tabs[i].panel('options').title);
+               //  var til=tabs[i].panel('options').title;
+               //  console.log(til);
+               //  $('#tabs').tabs('close',til);
             }
             for(var j=0;j<len;j++){
                 $('#tabs').tabs('close',titles[j]);
