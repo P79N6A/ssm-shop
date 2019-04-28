@@ -16,7 +16,7 @@ import java.util.List;
  *
  */
 @Controller
-public class managerController {
+public class ManagerController {
     @Autowired
     ProductCategoryService productCategoryService;
     @RequestMapping("/manager/{page}")
