@@ -22,6 +22,6 @@ public class FileController {
     public String uploadfile(@RequestParam MultipartFile file) throws IOException {
       String fileID =  FastDFSClient.uploadFile(file.getInputStream(),file.getOriginalFilename());
       System.out.println("文件上传成功！");
-      return fileID+"---"+file.getOriginalFilename();
+      return fileID;
     }
 }
