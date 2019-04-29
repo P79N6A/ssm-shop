@@ -23,8 +23,16 @@
     <input type="hidden" name="description">
 
    <table>
-       <tr><td>商品名称</td><td><input class="easyui-textbox" name="name" data-options="required:true,iconCls:'icon-search'" value="名称" style="width:300px"></td></tr>
-       <tr><td>商品分类</td><td>
+       <tr>
+           <td>商品名称</td>
+           <td>
+               <input class="easyui-textbox" name="name" data-options="required:true,iconCls:'icon-search'" value="名称" style="width:300px">
+           </td>
+       </tr>
+
+       <tr>
+           <td>商品分类</td>
+           <td>
            <select id="cc" class="easyui-combobox" name="cid" style="width:200px;">
            <option value="0">请选择</option>
                <%
@@ -38,18 +46,51 @@
                %>
            </select>
            <p id="cbox" style="display: none"></p>
-       </td></tr>
-       <tr><td>市场价格</td><td>
+          </td>
+       </tr>
+
+       <tr>
+           <td>市场价格</td>
+           <td>
            <input type="text" class="easyui-numberbox" value="100" data-options="min:0,max:99999999,required:true,precision:2" name="maketPricePreview">
-           <input type="hidden" name="maketPrice"></td></tr>
-       <tr><td>商品价格</td><td>
+           <input type="hidden" name="maketPrice">
+           </td>
+       </tr>
+
+       <tr>
+           <td>商品价格</td>
+           <td>
            <input type="text" class="easyui-numberbox" value="100" data-options="min:0,max:99999999,required:true,precision:2" name="pricePreview">
-           <input type="hidden" name="price"></td></tr>
-       <tr><td>商品编号</td><td>
-           <input type="text" class="easyui-numberbox" value="100" data-options="required:true" name="productNumber"></td></tr>
-       <tr><td>商品图片</td><td><input id="fileName" name="file"/><a id="btn"  class="easyui-linkbutton uploadPic">上传图片</a></td></tr>
-       <tr><td>图片预览</td><td><img src="" id="img" width="190" height="190"/></td></tr>
-       <tr><td>商品描述</td><td> <script id="editor" type="text/plain" style="width:800px;height:500px;"></script></td></tr>
+           <input type="hidden" name="price">
+           </td>
+       </tr>
+
+       <tr>
+           <td>商品编号</td>
+           <td>
+           <input type="text" class="easyui-numberbox" value="100" data-options="required:true" name="productNumber">
+           </td>
+       </tr>
+
+       <tr>
+           <td>商品图片</td>
+           <td>
+               <input id="fileName" name="file"/><a id="btn"  class="easyui-linkbutton uploadPic">上传图片</a>
+           </td>
+       </tr>
+
+       <tr>
+           <td>图片预览</td>
+           <td>
+               <img src="" id="img" width="190" height="190"/>
+           </td>
+       </tr>
+
+       <tr>
+           <td>商品描述</td>
+           <td><script id="editor" type="text/plain" style="width:800px;height:500px;"></script></td>
+       </tr>
+
    </table>
 </form>
     <div align="center">
