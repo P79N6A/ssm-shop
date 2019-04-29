@@ -5,22 +5,18 @@
     <title>商品列表</title>
 </head>
 <body>
-<table class="easyui-datagrid" data-option="url:'/product/list',fitCplumns:true,singleSelect:true">
+<table class="easyui-datagrid" data-options="url:'/product/list',fitColumns:true,singleSelect:true">
     <thead>
     <tr>
-        <th data-options="field:'code'">Code</th>
-        <th data-options="field:'name'">Name</th>
-        <th data-options="field:'price'">Price</th>
+        <th data-options="field:'id'">id</th>
+        <th data-options="field:'name'">商品名</th>
+        <th data-options="field:'image'">商品图片</th>
+        <th data-options="field:'maketPrice'">市场价格</th>
+        <th data-options="field:'price'">商品价格</th>
+        <th data-options="field:'description'">商品描述</th>
+        <th data-options="field:'productNumber'">商品编码</th>
     </tr>
     </thead>
-    <tbody>
-    <tr>
-        <td>001</td><td>name1</td><td>2323</td>
-    </tr>
-    <tr>
-        <td>002</td><td>name2</td><td>4612</td>
-    </tr>
-    </tbody>
 </table>
 </body>
 </html>
