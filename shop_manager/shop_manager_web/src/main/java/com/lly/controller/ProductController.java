@@ -15,7 +15,8 @@ public class ProductController {
     ProductService productService;
     @RequestMapping("/product/list")
     @ResponseBody
-    public EasyGrid productList(@RequestParam(value="page",defaultValue = "1" )int page,@RequestParam(value="rows",defaultValue = "10" )int rows){
+    public EasyGrid productList(@RequestParam(value="page",defaultValue = "1" )int page,
+                                @RequestParam(value="rows",defaultValue = "10" )int rows){
         EasyGrid easyGrid = productService.listProduct(page,rows);
         return easyGrid;
     }
