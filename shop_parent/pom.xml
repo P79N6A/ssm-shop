@@ -37,6 +37,7 @@
         <ueditor.version>1.1.2</ueditor.version>
         <servlet.version>2.5</servlet.version>
         <freemarker.version>2.3.28</freemarker.version>
+        <pagehelper.version>4.1.1</pagehelper.version>
     </properties>
 
     <dependencyManagement>
@@ -164,6 +165,12 @@
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
             <version>${servlet.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>${pagehelper.version}</version>
         </dependency>
     </dependencies>
     </dependencyManagement>
