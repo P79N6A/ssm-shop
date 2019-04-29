@@ -8,8 +8,9 @@
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
     <!--注解开发，扫描配置，指定需要扫描的包-->
     <context:component-scan base-package="com.lly.controller"></context:component-scan>
-    <!--用于数据绑定-->
+    <!--该配置会自动配置RequestMappingHandlerMappping和RequestMappingHandlerAdapter,并且提供对读写json和xml的支持-->
     <mvc:annotation-driven/>
+
     <mvc:default-servlet-handler/>
 
     <!--freemarker的配置在前，当请求发现/WEB-INF/ftl/没有的时候，就会去/WEB-INF/jsp/查找
@@ -26,7 +27,7 @@
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-
+    <!--配置静态资源的访问映射，此配置中的文件将不被前段控制器拦截-->
     <mvc:resources mapping="/css/**" location="/WEB-INF/css/"/>
     <mvc:resources mapping="/js/**" location="/WEB-INF/js/"/>
 
