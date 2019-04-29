@@ -5,7 +5,7 @@ public class EasyUITree {
     private String text;
     private String state;
     private String attributes;
-//idea
+
     public String getAttributes() {
         return attributes;
     }
