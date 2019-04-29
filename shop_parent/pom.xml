@@ -16,6 +16,7 @@
         <module>../shop_search</module>
         <module>../shop_common</module>
         <module>../shop_redis</module>
+        <module>../shop_portal</module>
     </modules>
 
     <properties>
