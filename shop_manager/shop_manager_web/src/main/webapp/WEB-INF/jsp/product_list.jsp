@@ -5,7 +5,7 @@
     <title>商品列表</title>
 </head>
 <body>
-<table class="easyui-datagrid">
+<table class="easyui-datagrid" data-option="url:'/product/list',fitCplumns:true,singleSelect:true">
     <thead>
     <tr>
         <th data-options="field:'code'">Code</th>
