@@ -1,6 +1,9 @@
 package com.lly.service.impl;
 
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.lly.common.EasyGrid;
 import com.lly.common.ResponseJsonResult;
 import com.lly.mapper.ProductMapper;
 import com.lly.pojo.Product;
@@ -29,19 +32,19 @@ public class ProductServiceImpl implements ProductService {
         return responseJsonResult;
     }
 
-//    @Override
-//    public EasyGrid listProduct(int pages, int rows) {
-//
-//        ProductExample productExample = new ProductExample();
-//        PageHelper.startPage(pages,rows);
-//        List<Product> productList = productMapper.selectByExample(productExample);
-//
-//        PageInfo<Product> pageInfo = new PageInfo<>(productList);
-//
-//        EasyGrid easyGrid = new EasyGrid();
-//        easyGrid.setTotal((int) pageInfo.getTotal());
-//        easyGrid.setRows(productList);
-//
-//        return easyGrid;
-//    }
+    @Override
+    public EasyGrid listProduct(int pages, int rows) {
+
+        ProductExample productExample = new ProductExample();
+        PageHelper.startPage(pages,rows);
+        List<Product> productList = productMapper.selectByExample(productExample);
+
+        PageInfo<Product> pageInfo = new PageInfo<>(productList);
+
+        EasyGrid easyGrid = new EasyGrid();
+        easyGrid.setTotal((int) pageInfo.getTotal());
+        easyGrid.setRows(productList);
+
+        return easyGrid;
+    }
 }
