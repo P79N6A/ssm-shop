@@ -44,7 +44,6 @@ public class ProductServiceImpl implements ProductService {
         EasyGrid easyGrid = new EasyGrid();
         easyGrid.setTotal((int) pageInfo.getTotal());
         easyGrid.setRows(productList);
-
         return easyGrid;
     }
 }
