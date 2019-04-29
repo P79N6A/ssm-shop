@@ -1,4 +1,4 @@
-var MN = MANONG ={
+var  MANONG ={
 
     initProductCategory: function () {
         function loadSubCategory(value) {
