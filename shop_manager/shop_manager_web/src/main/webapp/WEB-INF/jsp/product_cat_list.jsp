@@ -24,6 +24,7 @@
                    top: e.pageY
                });
            },
+           //当tree编辑完成后触发
            onAfterEdit: function (node) {
 
                var _tree = $('#productCategory');
@@ -52,16 +53,18 @@
 
        var tree =  $('#productCategory');
        var node = tree.tree('getSelected');
-
+       //append添加一个子节点到父节点
        tree.tree('append', {
+           //这个三目运算符表示node是否为空，要是不为空则以node为父节点，若为空则以根节点为父节点
            parent:(node?node.target:null),
+           //新建一个data的子节点，默认是以下信息
            data: [{
                id : 0,
                parentId : node.id,
                text:'新建分类'
            }]
        });
-
+       //这两行是在添加以data为模板的子节点后，启用编辑，在编辑改写完后将会触发tree结构的onAfterEdit事件
        var _node = tree.tree("find",0);
        tree.tree("select",_node.target).tree("beginEdit",_node.target);
 
