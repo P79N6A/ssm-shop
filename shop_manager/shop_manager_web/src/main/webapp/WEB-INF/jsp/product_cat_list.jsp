@@ -4,7 +4,7 @@
     <title>商品管理列表</title>
 </head>
 <body>
-<ul id="productCategory" class="easyui-tree"></ul>
+<ul id="productCategory"></ul>
 <div id="mm" class="easyui-menu" style="width:120px;">
     <div onclick="append()" data-options="iconCls:'icon-add'">添加</div>
     <div onclick="rename()" data-options="iconCls:'icon-add'">修改</div>
