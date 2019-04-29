@@ -22,6 +22,7 @@ public class ProductCategoryController {
     ProductCategoryService productCategoryService;
     @RequestMapping("/list")
     @ResponseBody
+    //@RequestParam是间接数据绑定，将请求中的参数，即下例中的id，间接的绑定到parentId中，若没有则为defaultValue默认值
     public List<EasyUITree> getProductCategoryByParentId(@RequestParam(value = "id", defaultValue = "0") Short parentId) {
 
         List<EasyUITree> easyUITrees = productCategoryService.findProductCategoryListByParentId(parentId);
