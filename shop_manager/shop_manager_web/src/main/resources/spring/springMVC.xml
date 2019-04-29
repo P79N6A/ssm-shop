@@ -8,7 +8,7 @@
        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
     <!--注解开发，扫描配置，指定需要扫描的包-->
     <context:component-scan base-package="com.lly.controller"></context:component-scan>
-
+    <!--用于数据绑定-->
     <mvc:annotation-driven/>
     <mvc:default-servlet-handler/>
 
