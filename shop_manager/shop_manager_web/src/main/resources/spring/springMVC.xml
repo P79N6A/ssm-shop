@@ -10,7 +10,7 @@
     <context:component-scan base-package="com.lly.controller"></context:component-scan>
     <!--该配置会自动配置RequestMappingHandlerMappping（处理器映射器）和RequestMappingHandlerAdapter（处理器适配器）,并且提供对读写json和xml的支持-->
     <mvc:annotation-driven/>
-    <!--对进入前端控制器的请求进行检查，若为静态资源就放行，否者交由前端控制器处理，因为<mvc:resource>没有对uditor做设置，所以会访问不到-->
+    <!--对进入前端控制器的请求进行检查，若为静态资源就放行，否者交由前端控制器处理，因为<mvc:resource>没有对uditor做设置，所以在用uditor上传图片时会报错-->
     <mvc:default-servlet-handler/>
 
     <!--freemarker的配置在前，当请求发现/WEB-INF/ftl/没有的时候，就会去/WEB-INF/jsp/查找
